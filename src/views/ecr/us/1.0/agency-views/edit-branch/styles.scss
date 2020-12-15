@@ -1,0 +1,27 @@
+
+#screen-content{
+      .in-modal{
+        .MuiSnackbar-root{
+          width: calc(100% - 26%);
+          left: 12.4% !important;
+        }
+      }
+  }
+.branch_area{
+    label{
+        a{
+            margin: 0 1rem ;
+            text-decoration: underline;
+        }
+        .edit_branch{
+          cursor: pointer;
+
+                color: #159aff;   
+        }
+        .delete_branch{
+          cursor: pointer;
+
+            color: #ff1414
+        }
+    }
+}

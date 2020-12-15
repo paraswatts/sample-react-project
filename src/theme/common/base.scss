@@ -1,0 +1,47 @@
+// _base.scss
+@import './variables.scss';
+
+$primary-color:#0091FF;
+$secondary-color:#1DA713;
+$primary-dark: #0888E9;
+$secondary-dark:#0D8704;
+$purple-color: #B01FF8;
+$white-color:#ffffff;
+$black-color:#000000;
+$base-color: #535050;
+$grey-color:#707070;
+$grey-color1: #8B8B8B;
+$grey-color2:#A2A2A2;
+$grey-color3:#f2f2f2;
+$grey-color4:#f8f8f8;
+$grey-color5:#808080;
+$grey-color6:#f5f5f5;
+$grey-color7:#eeeeee;
+$grey-color8:#dedede;
+$grey-color9:#a3a3a3;
+$grey-light-color: #D2D2D2;
+$primary-disable-color:#CFEAFF;
+$black-color: #000;
+$black-color1: #153368;
+$gold-color:#fac802;
+$dark-green: #247801;
+$dark-red: #F30031;
+$orange-color: #FF8000;
+$red-color: #ff1010;
+$transparent: transparent;
+$gray:#888;
+$default-font: 'Segoe UI';
+
+$d-none: none;
+$block: block;
+$inline-block: inline-block;
+$d-flex: flex;
+
+$static: static;
+$relative: relative;
+$absolute: absolute;
+$fixed: fixed;
+
+$f12: 12px;
+$f14: 14px;
+$f16: 16px;

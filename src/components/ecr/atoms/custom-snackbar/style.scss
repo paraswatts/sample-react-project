@@ -1,0 +1,57 @@
+.MuiSnackbar-root {
+    .MuiSnackbarContent-root {
+        position: relative;
+        width: 100%;        
+        padding-right: 40px;        
+    }
+}
+
+.MuiSnackbar-root{
+    position: fixed !important;
+    // width: fit-content;
+    top: 20%;
+    margin-bottom:25px;
+    left: 25%!important;
+    right: 25%!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width:768px) {
+        left: 4% !important;
+        right: 4% !important;
+    }
+}
+#screen-content {
+    .MuiSnackbar-root{
+        position: fixed !important;
+        top: 95px;
+        left: 15px !important; 
+         width: calc(100% - 30px);
+         @media (min-width:1024px) {  
+            width: calc(100% - 26%);
+              left: 23%!important;
+        }
+    }
+}
+.MuiSnackbarContent-action {
+     position: absolute;
+     right:18px;    
+}
+.message-text {
+    //white-space: pre;
+    display: inline-block!important;
+    padding-left:30px;
+    position: relative;
+    @media(max-width: 575px){ 
+        line-height: 15px;
+    }
+
+    svg.MuiSvgIcon-root {
+        position: absolute;
+        left:0;
+        top:-1px;
+        @media(max-width: 575px){ 
+            top:-3.5px;
+        }
+    }
+}

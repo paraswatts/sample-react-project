@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="9.882" height="26.816" viewBox="0 0 9.882 26.816">
+  <g id="seats" transform="translate(-21.9 -1)">
+    <g id="Group_15" data-name="Group 15" transform="translate(21.9 1)">
+      <g id="Group_13" data-name="Group 13" transform="translate(1.752)">
+        <path id="Path_224" data-name="Path 224" d="M29.034,7.423A3.212,3.212,0,1,0,25.8,4.234,3.221,3.221,0,0,0,29.034,7.423Z" transform="translate(-25.8 -1)" fill="#9c9c9c"/>
+      </g>
+      <g id="Group_14" data-name="Group 14" transform="translate(0 7.906)">
+        <path id="Path_225" data-name="Path 225" d="M22.349,29.425h1.437v7.636a.45.45,0,0,0,.449.449h5.211a.424.424,0,0,0,.449-.449V29.425h1.437a.424.424,0,0,0,.449-.449V20.621A2.013,2.013,0,0,0,29.761,18.6H23.921A2.013,2.013,0,0,0,21.9,20.621v8.355A.483.483,0,0,0,22.349,29.425Z" transform="translate(-21.9 -18.6)" fill="#9c9c9c"/>
+      </g>
+    </g>
+  </g>
+</svg>

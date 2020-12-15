@@ -1,0 +1,46 @@
+.input-wrap{
+    width: 50%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+     @media (max-width:991px){
+          width: 100%;
+     }
+  
+}
+.custom-input{
+    position: relative;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 35px;
+    border: 1px solid #cbcbcb;
+    padding:5px 10px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #313131;
+    @media screen and (max-width:768px) {
+        width: 100%;
+
+    }
+}
+.input-wrap::-webkit-input-placeholder { /* Edge */
+    font-size:13px
+  }
+  
+  .input-wrap:-ms-input-placeholder { /* Internet Explorer */
+    font-size:13px
+  }
+  
+  .input-wrap ::placeholder {
+    font-size:13px
+  }
+
+.length-indicator{
+  color:gray;
+  font-size: 8px !important;
+  margin-bottom: 15px;
+  margin-top: 1px;
+  text-align: right;
+}

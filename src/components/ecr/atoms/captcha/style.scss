@@ -1,0 +1,30 @@
+.captcha_field {
+    height: 44px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .captcha_code {
+        height:44px;
+        display: flex;
+        align-items: center;
+        @media (max-width:575px){
+            width:70px;            
+        }
+        canvas { 
+             @media (max-width:575px){ 
+                 height:auto;
+                 width:100%;
+             }
+        }
+    }         
+    i {
+        margin-left:15px;
+        @media (max-width:575px){
+            margin-left:10px;
+        }
+        img {
+            cursor: pointer;
+        }
+    }
+}

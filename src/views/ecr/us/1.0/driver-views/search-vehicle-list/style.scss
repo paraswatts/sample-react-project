@@ -1,0 +1,282 @@
+@import '../../../../../../theme/common/base.scss';
+
+/**Search Vehicles**/
+.Search_pref {
+    padding:20px;
+    background: $grey-color1;
+    margin:0 0 25px;
+    h6 {
+        color:$white-color;
+        margin-bottom: 15px;
+        font-weight: 600;
+    }
+    .btn {
+        border:2px solid $white-color; 
+        border-radius: 20px;
+        display: $block; 
+        width: 100%;
+        &:hover {
+            border:2px solid $base-color; 
+            background: $secondary-color;
+        }
+    }
+    .google-places-autocomplete__input {
+        width:100%;
+        border-radius: 32px;
+        padding: 10px 19px;
+    }
+    .MuiInputBase-root {
+        border-color:$grey-color1;
+        &::after {
+            background-image: url(../../../../../../assets/icons/calender_icon.png);
+            background-size: 100%;
+            background-repeat:no-repeat;
+            width:24px;
+            height:28px;
+            position:$absolute;
+            right:20px;
+            left:auto;
+            top:9px;
+            transform: none;
+            cursor: pointer;
+            z-index: 1;
+        } 
+    }
+}
+
+.vehicle_cat {
+    padding:15px;
+    margin:0 0 25px;
+    @media (max-width:767px){
+        margin:25px 0;
+    }
+    figure {
+        margin-bottom:0;
+    }
+}
+.vehicle_lists {
+    figure {
+        img {
+            width:100%;
+        }
+    }
+    >li {
+        overflow: hidden;
+        margin-top:35px;
+        @media (max-width:991px){
+            margin-top: 25px;
+        }
+    }
+    h5 {
+        margin:20px 0 10px;
+        @media (max-width:992px) {
+            margin:10px 0 0;
+        }
+    }
+    figure {
+        margin:0; 
+        padding:10px;
+        @media (min-width:991px){
+            padding-right: 0;
+        }
+    }
+    .vehicle_info {        
+        @media (min-width:992px) {
+            padding:0 20px;
+            padding-left: 0;
+        }
+        @media (max-width:991px) {
+            padding:0 15px;
+        }
+        h5 {
+            @media (min-width:991px){
+                font-size: $f16+3;
+            }
+        }
+        .vehicles_tools {
+            li {
+                display: inline-flex;
+                font-weight: 500;
+                color:$base-color;
+                margin-right:10px;
+                margin-bottom:5px;
+                &:last-child {
+                    margin-right: 0;
+                }
+                i {
+                    margin-right:7px;
+                    img {
+                        height:18px;
+                        filter: contrast(0.5);
+                    }
+                }
+            }
+        }
+    }     
+    .reloc_info {
+        background: $grey-color4;
+        padding:15px;
+        @media (max-width:991px) {
+            margin:10px 0;
+        }
+        span {
+            color:$black-color;
+            font-size:$f16;
+            strong {
+                color:$primary-color;
+            }
+        }
+    }
+    .destination_info {
+        padding: 5px 15px;
+        @media (max-width:991px){
+            padding:0 15px 10px;
+        }
+        .free_days {
+            background: $grey-light-color;
+            text-transform: uppercase;
+            color:$base-color;
+            cursor: default;
+        }
+        .dest_from {
+            @media (max-width:991px){
+                margin:10px 0;
+            }
+            label {
+                font-weight: 600;
+                text-transform: uppercase;
+                font-size: $f16 + 2;
+                color:$primary-color;
+                display: $block;
+                i {
+                    margin-right: 7px;
+                    img {
+                        width:22px;
+                    }
+                }
+            }
+        }
+    }
+} 
+
+.accordin {
+    .card {
+        border:0;
+        margin:0 0 15px;
+        &.show {
+            .collapse {
+                display: $block;
+            }
+            .card-header {
+                &:after {
+                    content:'';
+                    background-image: url(../../../../../../assets/driver/icons/minus_icon.svg);
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    width:17px;
+                    height:17px;
+                    position: $absolute;
+                    top:25px;
+                    right:15px;
+                }
+            }
+        }
+        .card-header {
+            border:0;
+            border-radius: 10px;
+            background: #ECECEC;
+            min-height:50px;
+            position: relative;
+            cursor: pointer;
+            @media(max-width:991px){
+                min-height:46px;
+            }
+            &:after {
+                content:'';
+                background-image: url(../../../../../../assets/driver/icons/plus_icon.svg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                width:17px;
+                height:17px;
+                position: $absolute;
+                top:15px;
+                right:15px;
+            }
+            h5 {
+                color: $base-color;
+                @media(max-width:991px){
+                    font-size: $f16;
+                }
+            }
+        }
+        .collapse{
+            transition: -webkit-transform .3s ease-out;
+            transition: transform .3s ease-out; 
+            transition: transform .3s ease-out,-webkit-transform .3s ease-out; 
+        }
+        .card-body {
+            padding: 1rem;
+            border:1px solid #ECECEC;
+            margin:7px 0 0;
+            border-radius: 10px;            
+        }
+        .MuiCheckbox-root{
+            padding:0!important;
+            &:hover, &:focus {
+                background: transparent;
+            }
+            .MuiSvgIcon-root {
+                fill:#ECECEC;
+            }               
+        }
+        .Mui-checked  {
+            svg {
+                fill: $primary-color!important; 
+            }
+        }
+    }    
+}
+.check_list {
+    li {
+        display: $inline-block;
+        padding-right: 10px;
+        position: $relative;
+        label {
+            padding-left: 10px;
+            cursor: pointer;
+        }
+        h6 {
+            font-size:$f14;
+            margin:0;
+            font-weight:600;
+        }
+        .MuiButtonBase-root {
+            position: $static;        
+            .MuiIconButton-label {
+                position: $static;
+                input[type="checkbox"] {
+                    position: $absolute;
+                    top:0;
+                    left:0;
+                    width:100%;
+                }
+            }
+            .MuiTouchRipple-root {
+                display: $d-none;
+            }
+        }
+    }
+}
+
+.accordin {
+    .check_list { 
+        li {
+            width:100%; 
+            padding-right: 0;
+        }
+    }
+     .value_filter {
+        min-width:46px;
+        text-align: left;
+    }
+}

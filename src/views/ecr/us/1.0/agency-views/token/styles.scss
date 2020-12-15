@@ -1,0 +1,70 @@
+.buy_token {
+
+    .buy_title {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        h5 {
+            color:#0091FF;
+            font-weight:700;
+            i {
+                display: block;
+            }
+        }
+    }
+}
+
+
+
+.token_block {
+    background: #f5f5f5;
+    box-shadow: 0 2px 10px rgba(0,0,0,.2);
+    border-radius: 20px;
+    padding:25px;
+    min-height:280px;
+    margin:80px 0 20px;
+    h5 {
+        font-weight:700;
+        color:#505050;
+        span{
+            color:#0888E9;
+            display: block;
+            font-size: 150%;
+        }
+    }
+    .price_save {
+        background: #1DA713;
+        padding:20px;
+        border-radius: 20px;
+        max-width: 70%;
+        margin:30px auto 40px;
+        color:#fff;
+        text-align: center;
+        min-height:120px;
+        justify-content: center;
+        align-items: center;
+        label {
+            font-size: 30px;
+            font-weight: 600;
+            color:inherit;
+        }
+        span {
+            color:inherit;
+            font-size: 14px;
+        }
+    }
+}
+.buy_btn {
+    .btn {
+        border:3px solid #fff;
+        border-radius: 35px;
+        &:hover, &:focus {
+            border:3px solid #fff;
+        }
+    }
+}
+
+.short_txt {
+    font-size: 12px;
+}

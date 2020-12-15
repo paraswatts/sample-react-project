@@ -1,0 +1,41 @@
+.faq_block {
+    .is-closed{
+        &:after {
+            background-image: none;
+            border-style: solid;
+            content: ' ';
+            display: block;
+            height: 0;
+            position: absolute;
+            width: 0;
+            border-width: 19px 9px !important;
+            border-color: #fff transparent transparent !important;
+            top: 15px;
+            right: 15px;
+            background: transparent !important;
+        }
+
+    }
+    .is-open{
+        &:after {
+            background-image: none;
+            border-style: solid;
+            content: ' ';
+            display: block;
+            height: 0;
+            position: absolute;
+            width: 0;
+            border-width: 19px 9px !important;
+            border-color: #fff transparent transparent !important;
+            top: -5px;
+            right: 15px;
+            background: transparent !important;
+            transform: rotate(180deg) !important;
+         
+        }
+
+    }
+    .Collapsible__trigger {
+        padding-right: 35px;
+    }
+}

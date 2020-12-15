@@ -1,0 +1,73 @@
+@import '../../../../theme/common/base.scss';
+
+.lg-modal .MuiDialog-paperWidthSm {
+    @media(min-width:1024px){
+        max-width: 800px;        
+    }
+}
+#alert-dialog-title {
+    button[aria-label="close"] {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        z-index:11;
+    }
+}
+
+.lg-modal {
+    button[aria-label="close"]{
+        background: rgba(0,0,0,.5);
+        svg path {
+            fill: #fff;
+        }
+    }
+    #alert-dialog-title {
+        padding:0;
+    }
+    .MuiDialogContent-root {
+        padding:0;
+    }
+}
+// Carousel Slider
+.carousel {
+    .control-next.control-arrow:before {
+        border-left: 15px solid $white-color;
+    }
+    .control-arrow:before, .carousel.carousel-slider .control-arrow:before {
+        border-top: 15px solid transparent!important;
+        border-bottom: 15px solid transparent!important;
+    } 
+    .control-prev.control-arrow:before {
+        border-right: 15px solid $white-color;
+    } 
+    .carousel-status {
+        right:auto;
+        left:0;
+    }
+   .slide {
+        padding: 25% 0;
+         position: relative;
+        img {
+            object-fit: cover;
+            object-position: center;
+            vertical-align: top;
+            position: absolute;       
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }    
+    .thumbs-wrapper {
+        margin:10px;
+        .thumb {
+            height: 49px;
+            overflow: hidden;
+            &:last-child {
+                margin-right:0;
+            }
+        }
+    }
+}
+
+.carousel .control-arrow, .carousel.carousel-slider .control-arrow {opacity: 1;}

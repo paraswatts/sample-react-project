@@ -1,0 +1,57 @@
+@import '../../../../../../theme/common/base.scss'; 
+#screen-content{
+      .in-modal{
+        .MuiSnackbar-root{
+          width: calc(100% - 26%);
+          left: 12.4% !important;
+        }
+      }
+  }
+
+  .branch_area{
+      .branch_list {
+          li {      
+              margin:10px 0 0;
+              label {
+                  text-transform: capitalize;
+                  margin:0 10px 0 0;
+               
+              }  
+              a {
+                  margin: 0 1rem 0 0;
+                  text-decoration:underline;
+                  &:hover {
+                      text-decoration:none;
+                  }
+              }
+              .ed_icon {
+                  display: $inline-block;
+                  margin-left: 10px;
+                  .edit_branch{
+                      text-transform: lowercase;
+                      color: $primary-color;
+                  }
+                  .delete_branch{
+                      color: $dark-red;
+                  }
+              }
+          }
+      }
+  }
+  .branch_list_area{
+      label{
+        display: flex !important;
+        align-items: center;
+        @media(max-width: 767px){
+        display: inline-block !important;
+        }
+        .ed_icon{
+            a{
+                @media(max-width: 767px){
+                    margin-left: 0;
+                }
+              
+            }
+        }
+      }
+  }

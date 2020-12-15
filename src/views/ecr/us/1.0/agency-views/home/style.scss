@@ -1,0 +1,220 @@
+@import '../../../../../../theme/common/base.scss';
+
+/**dashboard Css**/
+.app-main_outer {
+    padding-left:300px;
+    width:100%;
+    padding-top: 90px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    @media (max-width:1024px) {
+        padding-left: 10px;     
+    }
+}
+.badge-grey {
+    background-color: $grey-color6;
+    font-weight: 400;
+}
+.cursor{
+    cursor: pointer;
+}
+.card-block {
+    padding: 20px;    
+    border-radius: 20px;
+    display: $d-flex;
+    align-items: center;
+    flex-direction: column;
+    height:100%;    
+    h4 {
+        color:inherit;
+        font-weight: 600;     
+        text-transform: uppercase;   
+        margin-bottom: 0;
+        min-height:64px;
+        display: $d-flex;
+        align-items: center;         
+        font-size: 22px;   
+        @media (max-width:1400px) {
+            font-size: $f16+3; 
+        }     
+    }
+    h1 {
+        margin:0 0 15px;
+        color:inherit;
+    }
+}
+.box-blue {
+    color:$primary-color;
+    box-shadow:0px 3px 5px -1px $primary-color;
+}
+.box-orange {
+    color:$orange-color;
+    box-shadow:0px 3px 5px -1px $orange-color;
+}
+.box-red {
+    color:$dark-red;
+    box-shadow: 0px 3px 5px -1px $dark-red;
+}
+.box-green {
+    color:$dark-green;
+    box-shadow: 0px 3px 5px -1px $dark-green;
+}
+
+.rate_it {
+    padding:10px 15px;
+    font-weight: 600;
+    border:1px solid $grey-color;
+    text-transform: uppercase;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,.2);    
+    .btn {
+        border-radius:20px;
+        padding:10px 15px; 
+        min-width:70px;        
+        margin-left: 10px;
+    }
+    span {
+        line-height: 17px;
+    }
+}
+.weight-6 {
+    font-weight:600;    
+}
+.table-default {
+    padding:0 15px;
+    table {
+        margin-left:-15px;
+        margin-right:-15px;
+        font-size:$f14;
+    }
+    thead {
+        th {
+            line-height: $f14; 
+            color: $base-color;
+            font-weight:600;
+            min-width: 100px;
+            word-break: keep-all;
+            white-space: nowrap;
+        }
+    }
+    tbody {
+        box-shadow:0 4px 7px -1px rgba(136, 136, 136, 0.2); 
+        margin-bottom: 10px;
+        border-radius: 7px;
+    }
+    .badge {
+        font-weight: 400;
+    }
+}
+
+.vechile_pic {
+    span {
+        margin:0 0 10px;
+        &:nth-last-of-type(2), &:last-child {
+            margin-bottom:0;
+        }
+        img {
+            width:100%;
+            max-width: 100px;
+            height: 50px;
+            object-fit: contain;
+        }
+    }
+}
+.add_btn {
+    min-width:80px;
+    background: $transparent;
+    border:0;
+    color:$base-color;
+    padding:10px 5px;
+    i {
+        display: $block;
+        margin-top:10px;
+    }
+}
+
+.table-pagination{
+    display: $d-flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 15px;
+    position: $relative;
+    td {
+        vertical-align: middle;
+    }
+}
+
+.MuiIconButton-root {
+    padding: 5px !important;
+}
+.dashboard_popup{
+    .modal-body{
+        background: #fff;
+    }
+    .modal-content{
+        width:100%;
+        max-width: 100%;
+        min-height: auto;
+        .det-striped{
+            li{
+                display: flex;               
+                align-items: center;
+                justify-content: start;
+                padding: 10px;
+                &:nth-child(even){
+                    background: #f2f2f2;
+                }
+               
+                span{
+                    text-align: left;
+                    width: 50%;
+                }
+                .btn-primary{
+                    background: #4472c4;
+                    padding-left: 2rem;
+                    padding-right: 2rem;
+                }
+                .btn-danger{
+                    background: #ff0000;
+                    padding-left: 2rem;
+                    padding-right: 2rem;
+                }
+            }
+        }
+    }
+}
+
+        .attention-message{
+            background: #f2f2f2;
+            padding: 10px;
+        }
+.dashboard_popup{
+    .modal-content {
+        .close {
+            position: absolute;
+            right: -22px;
+            top: -25px !important;
+            font-size: 29px !important;
+            cursor: pointer;
+            background: #000;
+            opacity: 1;
+            color: #fff;
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+            font-weight: 400;
+            z-index: 1;
+            @media(max-width: 575px){
+                right: -6px;
+                top: -6px !important;
+                font-size: 18px !important;
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}
+.terms-link{
+    text-decoration: none;
+    color: #0091FF;
+}

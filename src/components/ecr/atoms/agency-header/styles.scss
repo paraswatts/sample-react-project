@@ -1,0 +1,81 @@
+@import '../../../../theme/common/base.scss'; 
+
+.admin-header {
+    background-color: $primary-color;
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:5px 0;
+    z-index:1111;
+    .navbar-toggler span img {
+      filter: brightness(0) invert(1);
+    }
+    .navbar-toggler {
+        width: 25px;
+        padding: 0;
+        margin-left: 10px;
+        span img {
+            width: 23px;
+        }
+    }    
+}
+.logo-class{
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+    font-size: 2.1875rem;
+    object-fit: cover;
+}
+.logo-admin { 
+    width: 280px;
+    display: $d-flex;
+    align-items: center;
+    transition: width .2s;
+    -webkit-transition: width .2s;
+    img {
+        max-width: 160px;
+        @media (max-width:767px) {
+             max-width: 130px;
+        }
+    }
+}
+
+.sidebar_header {
+    li {
+        padding-left: 15px;
+    }
+    .logout_menu {
+        font-size:$f16;
+        font-weight: 700;
+        cursor: pointer;
+        word-break: keep-all;
+        white-space: nowrap;
+        @media (min-width:1400px) {
+            font-size:$f16+2;
+        }
+        &:hover {
+             color:$black-color;
+        }
+    }
+}
+.admin-header{
+    .navbar-toggler{
+        padding: 0;
+        margin-left: 10px;
+        width: 23px;
+        @media(max-width: 1024px){      
+                display: block;
+            
+        }
+    }
+}
+
+.admin-header {
+    .sidebar_header {
+        .MuiIconButton-label{
+            path {
+                color: #fff;
+            }
+        } 
+    }
+}

@@ -1,0 +1,19 @@
+@import "../../../../theme/common/base.scss";
+
+.star_rating {
+    min-width:90px;
+
+    i.fa {
+        font-size: 20px;
+    }
+    >span>span {
+        margin-right: 5px;
+    }
+    .unchecked{
+        color: $grey-color5;
+    }
+    .checked{
+        color: $gold-color;
+    }
+}
+.rate_star > span{ white-space: nowrap;}

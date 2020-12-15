@@ -1,0 +1,28 @@
+.form-checkbox {
+    position: relative;
+  }
+  .form-checkbox input~.radio {
+    background-color: #fff;
+  }
+  .form-checkbox input:checked~.radio {
+    background-color: #fff;
+  }
+  .radio:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }  
+  .form-checkbox input:checked~.radio:after {
+    display: block;
+  }
+  .radio:after {
+    top: 4.5px;
+    right: 5px;
+    border-radius: 8px;
+    width: 16px;
+    background-color: #707070;
+    height: 16px;
+  }
+  .MuiFormGroup-row{
+    flex-direction: column!important;
+  }

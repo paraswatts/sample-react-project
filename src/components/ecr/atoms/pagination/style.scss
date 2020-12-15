@@ -1,0 +1,70 @@
+@import '../../../../theme/common/base.scss';
+
+.pagination-div{
+    padding: 10px 0;  
+    -webkit-tap-highlight-color: transparent;            
+    .pagination-text {
+        color: #4d4d4f;
+        margin:0; 
+        font-size: 16px;
+        font-weight: 400;     
+        @media (max-width:767px) {
+            text-align: center;
+        }           
+        span {
+            font-weight:500;
+            color:#0091FF;
+        }
+    }
+}
+ 
+.pagination {       
+     justify-content: flex-end;
+    @media screen and (max-width:767px) {
+        padding-top: 20px;
+        justify-content: center;
+        width: 100%;
+    } 
+    li {
+        cursor: pointer;
+        margin:0 2px;
+        &.active {
+            a {
+                background: $primary-color;
+                color:$white-color;
+            }
+        }
+        &.next, &.previous {
+            a {
+                background: #153368;
+                color:$white-color;
+            }
+        }
+       &.disabled {
+            a {
+                background: $grey-light-color;
+            }
+       }
+        &.next, &.previous {
+            a {
+                cursor: pointer;
+                font-family: monospace;
+            }
+        }
+        a {
+            background: #eee;
+            padding: 7px 10px;
+            border-radius: 7px;
+            font-size: 14px;
+            font-weight: 600;
+            min-width: 34px;
+            height: 34px;
+            display: inline-block;
+            text-align: center;
+            white-space: nowrap;
+        }
+    }
+    .break-me{    
+        margin: 0px;
+    }     
+}

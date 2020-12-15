@@ -1,0 +1,297 @@
+@import '../../../../../../theme/common/base.scss';
+
+.popluar_relocation_sec {
+    background: url(../../../../../../assets/driver/feature_img.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0;
+    margin-top:0px;
+    min-height: 400px;
+    padding:120px 0 50px;
+    @media (max-width:575px) {
+        padding-top:70px;
+    }
+    &.popluar_header{
+        padding: 50px 0;
+    } 
+}
+.header_blue {
+    button{
+        svg{
+            path {
+                color: $white-color;
+            }
+        } 
+      }
+} 
+.popular-search {
+    width:75%;    
+    margin:0 auto;
+    position: $relative;
+    @media(max-width:991px){
+        width:100%;
+    }
+    .popluar_fields {
+        border-radius:30px;
+        background: $white-color;
+        width:100%;
+        border:1px solid $grey-color;
+        @media(max-width:767px){
+            border-radius:15px;
+            background: #1E5E9E;
+            padding:25px;
+        }
+        .mt-4 {
+            margin-top:0!important;
+        }
+        .form-group {
+            margin: 0;
+            @media(max-width:767px){ 
+                margin-bottom: 20px;
+            }
+            .MuiInputLabel-shrink {
+                display: $d-none;
+            }
+        }
+        .btn {
+            border-radius:20px;
+            padding: 7px 11px 8px;
+            font-size: $f16;
+            margin:4px;            
+            position:$relative;
+            background: $primary-color;
+            border:0;
+            min-width: 140px;
+            height: 40px;
+            @media (max-width:1200px){
+                font-size: $f14 + 1;
+                height:40px;
+            }
+            &:before {
+                content:'';
+                background:$grey-color;
+                height:70%;
+                top:15%;
+                left:-10%; 
+                width:1px;
+                position: $absolute;
+                @media (max-width:767px){ 
+                    display:$d-none;
+                }
+            }
+        }
+        .google-places-autocomplete {
+            height:100%;
+            padding:0 15px;
+            position:$relative;
+            cursor: pointer;
+            @media (max-width:767px){
+                 padding:0px;
+                 margin-bottom: 20px;
+            }            
+            &:after {
+                content:'';
+                background:$grey-color;
+                height:70%;
+                top:15%;
+                right:10px;
+                width:1px;
+                position: $absolute;
+                @media (max-width:767px){
+                    display: $d-none;                      
+                }
+            }
+            .google-places-autocomplete__input{
+                margin:0;
+                box-shadow: none;
+                font-size: $f16;                 
+                border-radius: 30px;
+                padding:12px;
+                @media (max-width:767px){
+                    font-size: $f16;       
+                    width: 100%;
+                    padding-left:22px;
+                }
+            }
+        }       
+        .MuiInputBase-root {
+            padding:0;
+            border:0;            
+            &::after {
+                background-image: url(../../../../../../assets/icons/calender_icon.png);
+                background-size: 100%;
+                background-repeat:no-repeat;
+                width:28px;
+                height:32px;
+                position: $absolute;
+                right:10px;
+                left:auto;
+                top:7px;
+                transform: none;
+                cursor: pointer;
+                z-index: 11;
+                @media (max-width:1200px){
+                    right:0;
+                }
+                 @media (max-width:767px){
+                    right:10px;
+                }
+            }       
+            .MuiInputBase-input {
+                font-size: 1rem;
+                min-width: 110px;
+                color: $base-color;         
+                position:$relative;                      
+            }
+            button {
+                padding-left: 0; 
+                @media (max-width:767px){
+                    padding-right: 15px!important;
+                }
+            }
+        }
+    }
+    .advance_btn {
+        color:$white-color;
+        font-size:$f16+2;
+        font-weight: 600;
+        display: $inline-block;
+        margin:10px 0 0;
+        cursor: pointer;
+        &:hover, &:focus {
+            color:$white-color;
+        }
+    }  
+}
+
+.search_form_container {
+    display:$d-none;
+}
+.main_section {
+    padding:40px 0;
+    @media (max-width:767px){
+        padding:30px 0;
+    }
+}
+
+.title_loc h5 {
+    color:$black-color;
+}
+
+.loc_block {
+    background: $grey-color4;
+    border-radius: 30px; 
+    padding: 30px; 
+    margin-top:30px;
+    max-width: 100%;
+    @media (min-width:1280px){
+        max-width: 90%; 
+        margin-left:auto; 
+        margin-right:auto; 
+    }
+    i {
+        margin-bottom: 7px;
+        img {
+            max-width: 60px;
+        }
+    }
+    span {
+        font-weight: 600;        
+        display: $block;
+        font-size: $f16+4;
+        line-height: normal;
+        margin:0 0 7px;
+    }
+    h4 {
+        color:$primary-color;  
+        margin:0;      
+        font-size: 26px;
+        font-weight: 700;
+    }
+    .btn {
+        margin-top:10px;
+        border-radius: 15px;
+        @media (max-width:991px){
+            margin-top:10px;
+        }
+    }
+}
+
+.helpful-sec {
+    padding: 70px 0 0;
+    @media (max-width:1200px){
+        padding: 40px 0 0;
+    }
+    h5 {
+        color:$black-color;
+    }
+}
+
+.sumary_block {
+    position: $relative;    
+    padding-left: 100px;
+    margin-bottom: 40px;
+    text-align: center;
+    @media (max-width:767px){ 
+        padding-left: 0;
+    }
+    i {
+        position: $absolute;
+        width:100px;
+        left:0;
+        top:0;
+        display: $inline-block;
+        @media (max-width:767px){
+            margin: 0 0 15px;
+            position: $static;
+        }
+    }
+    p {
+        font-size: $f16 +2;
+        color:$black-color;
+        line-height:24px;
+        font-weight:400;
+        @media (max-width:1200px){
+            font-size: $f16;
+        }
+    }
+    h5 {
+        color:$black-color;
+        font-weight:600;
+    }
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.help_btn {
+    padding-left: 100px;
+    @media (max-width:767px){
+        padding-left: 0;
+        text-align: center!important;
+    }
+    a {
+        font-size: $f16;
+        color: $primary-color !important;
+        font-weight: 600; 
+        cursor: pointer;
+    }
+}
+
+.geosuggest__suggests--hidden {
+    max-height: 0;
+    overflow: hidden;
+    border-width: 0;
+}
+.geosuggest__item--active {
+    background: $primary-dark;
+    color: $white-color;
+}
+.video_play{
+    @media (max-width:991px){
+        margin:30px 0 0;
+    }
+    video {
+        width: 100%;
+    }
+}

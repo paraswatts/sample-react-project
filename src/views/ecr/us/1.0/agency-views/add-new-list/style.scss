@@ -1,0 +1,255 @@
+@import '../../../../../../theme/common/base.scss';
+
+.summary_detail {
+  label {
+    font-weight: 600;
+    margin:0 0 10px;
+  }
+}
+#screen-content{
+  .app-main_outer{
+    .in-modal{
+      .MuiSnackbar-root{
+        width: calc(100% - 26%);
+        left: 12.4% !important;
+      }
+    }
+  }
+}
+
+.table_block {
+  margin:20px 0 0;   
+  .table_div {
+    padding:0 15px;
+    .col-md-6 {    
+      background: $grey-color3;
+      &:first-child {     
+          &:after {
+            content:'';
+            background: #e0e0e0;
+            width:1px;
+            height: 100%;
+            position: absolute;
+            right:0;
+            top:0;
+            z-index: 1;
+            @media (max-width:767px) {
+              display: none;
+            } 
+          }             
+        }
+      }
+    .row {      
+      &:nth-child(even){
+        background: $grey-color3;
+      }
+      &:nth-child(odd) {
+        background: $grey-color4;
+      }
+      .col {
+        padding-top:10px;
+        padding-bottom: 10px;
+        font-size: $f16;
+        padding-left: 25px;
+        padding-right: 25px;
+        @media (max-width:767px){
+           font-size: $f14;
+        }
+      }
+    }
+  }
+}
+
+.terms_condition {
+    margin-top:20px;
+    margin-bottom:20px;
+  p {
+    background: $grey-color4;
+    margin: 0;
+    padding:15px;
+  }  
+}
+.bk_confirm {  
+    margin-top:30px;
+    margin-bottom:20px;
+    label {
+      strong {
+        color:$primary-color;
+      }
+    }
+    .agree {
+      font-size:14px;
+      .form-checkbox {
+        display: inline-block;
+        position: relative;
+        width: 22px;
+        height: 25px;        
+    }
+    span {
+      font-weight: 700;
+      padding-left: 7px;
+    }
+  }
+}
+
+.form-btn-container{
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: space-between;
+   flex-wrap:wrap;
+   @media (max-width:480px) {
+      justify-content: center;
+   }
+}
+
+.form-fields .col-1 {
+   margin-bottom: 1.2rem;
+    font-weight: 600;
+}
+
+.form-fields {
+  label {
+    font-weight:600;
+    margin:0 0 10px;
+    line-height: 17px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  } 
+  .form-group {
+    margin-bottom: 1.2rem;
+  }
+}
+.chk_mdl {
+    margin-top:10px;
+}
+.drop_input {
+  input {
+    font-size: 14px;
+  }
+}
+
+label.to_txt {
+  margin-top:12px;
+  word-break: keep-all;
+}
+.remove-button-wrapper {
+    position: relative;
+    top: 7px;
+    &:focus{
+      outline:none;
+    }
+    
+       .remove-admin-button{
+        width: 30px;
+        height:30px;
+        
+        background: #4D4D4F;
+        border:2px solid #4D4D4F;
+        font-weight: 600;
+        color:#fff;
+        font-size: 18px;
+        font-family: fantasy!important;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+        &:hover {
+            background: #fff;
+            color:#4D4D4F;
+        }
+    } 
+    .remove-admin-button {   
+      border:0;
+      background: transparent;
+        img {
+            width: 24px;
+        }
+    }
+}
+
+.range_opton {
+  span {
+    white-space: normal;
+    word-break: keep-all;
+  }
+}
+
+.MuiInputAdornment-positionEnd{
+  display: none !important;
+  button{
+    display: none !important;
+  }
+}
+.add-vehicle-button{
+  width: 27px;
+  height: 27px;
+  background: #fff;
+  padding: 0;
+  border: 1px solid #4D4D4F;
+  font-weight: 300;
+  color: #4D4D4F;
+  font-size: 14px;
+  font-family: fantasy !important;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+    &:hover {
+        background: #fff;
+        color:#4D4D4F;   
+        .Tooltip_block {
+        opacity: 1;
+      }
+    }  
+}
+.Tooltip_block {
+  position: absolute;
+    background: white;
+    padding: 5px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 210px;
+    right: 30px;
+    top: -71px;
+    border: 1px solid #535050;
+    font-size: 13px;
+    text-align: center;
+    z-index: 1;
+    display: none;
+}
+#tooltip_title_show{
+  float: left;
+  display: block;
+}
+.tooltip_show .Tooltip_block {
+  display: block;
+}
+.img-size{
+  width: 60%;
+  height: 70%;
+}
+.size{
+ font-size: 0.6rem;
+}
+.compact_cars{
+  .success{
+    border-color: #007bff!important;
+  }
+  .shadow_car{
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 0px #bcbcbc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+}
+.string_ref {
+  .error_msg{
+    padding-right: 50px
+  }
+}
+.select_new_vehicle{
+  .img-selected {
+    width: 100%;
+@media(max-width:767px){width: 60%;}  }
+}

@@ -1,0 +1,49 @@
+@import '../../../../../../theme/common/base.scss';
+
+.for_vehicle{
+    position: relative;
+}
+.badges_vehicles {
+    .badge-grey { 
+        background: #E5F4FE;
+        border:1px solid $grey-color1;
+        border-radius: 30px;
+        vertical-align: middle;
+        font-size: $f16;
+        padding:10px 14px;
+        margin:5px 10px 0 0;
+        i {
+            border:1px solid $grey-color1;
+            border-radius: 30px;        
+            width:20px;
+            height: 20px;
+            line-height: 14px;
+            text-align: center;
+            background: $white-color;
+            display: $inline-block;
+            cursor: pointer;
+            img {
+                width:10px;
+            }
+        }
+    }
+}
+
+// Branch
+.table-style1 {
+    td {
+        font-size: $f14;
+    }
+}
+.action_btn {
+    a {
+        margin:5px 10px;
+        display: $inline-block;
+    }
+}
+.edit_btn {
+    color:$primary-color;
+}
+.del_btn {
+     color: $red-color;
+}

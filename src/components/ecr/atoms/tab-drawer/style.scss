@@ -1,0 +1,43 @@
+/** Signup tab**/
+.tabs-container{    
+    .MuiTabs-root{
+        .MuiTabs-scroller{
+            .MuiTabs-flexContainer{                
+                justify-content: center;
+                margin:0 0 30px;
+                button{                        
+                    padding: 10px 12px;                    
+                    font-size:17px;
+                    text-transform: capitalize;
+                    background: #D2D2D2;                     
+                    color:#5A5757;
+                    min-width:150px;
+                    opacity: 1;
+                    @media(max-width:575px){
+                        font-size:16px;
+                        min-width:115px;
+                        min-height: 38px;
+                    }
+                    &.Mui-selected{
+                        background: #0091FF;
+                        .MuiTab-wrapper{
+                            color: #fff;
+                            background: #0091FF;
+                        }
+                    }
+                    &:first-child {                    
+                        border-top-left-radius: 10px;
+                        border-bottom-left-radius: 10px;                       
+                    }   
+                    &:last-child {                        
+                        border-top-right-radius: 10px;
+                        border-bottom-right-radius: 10px;                      
+                    }  
+                }               
+            }
+            .MuiTabs-indicator{
+                display: none;                
+            }
+        }
+    }
+}

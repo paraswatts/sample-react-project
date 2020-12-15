@@ -1,0 +1,23 @@
+@import '../../../../theme/common/base.scss';
+
+#clear-selection{
+    color: $primary-color;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+// .rdrInRange{
+//     color:rgb(29, 209, 161)!important;
+// }
+
+.rdrDayDisabled span {
+    color:#aeb9bf!important;
+}
+
+ .rdrDay rdrDayDisabled {
+    .rdrDayNumber {
+        span {
+        color: grey
+        }
+    }
+ }

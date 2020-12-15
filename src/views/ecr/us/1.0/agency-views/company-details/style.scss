@@ -1,0 +1,83 @@
+
+.company_logo span {
+    position: relative;
+}
+
+.company_logo span>span {
+    position: absolute;
+    z-index: 11;
+    color: #fff;
+    background: #ff0000;
+    border-radius: 15px;
+    width: 18px;
+    height: 18px;
+    line-height: 16px;
+    right: -2px;
+    top: -6px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+.cmp_crs_ic span>span {
+    right: -2px;
+}
+.company_logo {
+    span {
+        margin:0 0 0px;
+        &:nth-last-of-type(2), &:last-child {
+            margin-bottom:0;
+        }
+        img {
+            width:100%;
+            width:60px !important;
+            max-width:60px !important;
+            // max-width:;
+            height: 60px !important;
+            max-height:160px !important;
+            object-fit: contain;
+        }
+      
+    }
+    .company_det_icon{
+        img{
+            margin-top: -5px;
+        }
+    }
+}
+.disable{
+    .Mui-disabled{
+        cursor: not-allowed;
+
+    }   
+}
+.add_btn{
+    i{
+        margin-top: 0px;
+    }
+}
+.driver_licence_block{
+    .driver_licence_radio{   
+    width: 100%;
+    float: left;
+    margin-bottom: 5px;
+    .col-md-6{
+        width: 100%; 
+        max-width: 100%;
+        padding-left: 0;
+        legend{
+            margin-bottom: 0;
+        }
+    }
+}
+    .MuiFormGroup-row {
+        flex-direction: row !important;
+        .MuiFormControlLabel-root{
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            width: auto;
+            padding-right: 10px;
+        }
+    }
+   
+}

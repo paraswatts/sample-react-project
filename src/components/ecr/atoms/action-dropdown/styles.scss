@@ -1,0 +1,64 @@
+@import '../../../../theme/common/base.scss';
+
+.edit_action {
+    position: $relative;    
+    .edit_icon {
+        cursor: pointer;
+        img {
+            max-width: 32px;
+        }
+    }    
+}
+.drop_down {
+    border: 1px solid $grey-color;
+    background: $white-color;
+    border-radius: 9px;
+    padding: 14px;
+    min-width:190px;
+    position: $absolute;
+    top: 100%;
+    right: 6%;
+    z-index:99;
+    display: $block;
+    .checkmark {
+        border-width:2px;
+    }
+    li {         
+        position: $relative;
+        margin-bottom: 7px;
+        cursor: pointer;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .checkbox {
+            position:$absolute;
+            left:0;
+            width:30px;
+            overflow: hidden;
+            span {
+                border:3px solid $grey-color7;               
+            }            
+        }
+        span {
+            font-size: $f14+1;
+            &.user_edit {
+                padding-left: 30px;
+            }
+        }
+    }
+}
+.border-complete{
+    border-color: #A51B93 !important;
+}
+.border-request{
+    border-color: #ff7113 !important;
+}
+.border-disabled{
+    border-color: rgb(168, 167, 167) !important;
+}
+.disable-edit{
+    >span{
+        cursor: not-allowed;
+    }
+    opacity: 0.2;
+}

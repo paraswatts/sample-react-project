@@ -1,0 +1,102 @@
+@import "../../../../theme/common/base.scss";
+
+.header {  
+  height:auto!important;
+  position: $relative;
+  width:100%;
+  z-index: 111; 
+  .header-top {
+    padding:0px 0 2px;
+    background: $primary-color;    
+    ul {
+      li {        
+        a {
+          font-size: $f12;
+          padding:0 10px;
+          font-weight: 600;          
+          line-height: 34px;
+          color: $white-color;
+          display: $inline-block;
+          cursor: pointer;
+          @media (max-width:575px){
+            padding:0 5px;
+          }
+        }
+      }
+    }
+    .login-btn {
+      @media (max-width:575px){
+        padding-bottom:3px;
+      }
+      .btn {
+        margin:2px 3px;        
+        padding: 3px 8px;
+        border-radius: 30px;
+        min-width: 80px;
+        font-weight: 600;
+        font-size:$f12;
+        min-height: initial;
+        color:$white-color;
+        &:hover{
+          color:$black-color;
+        }
+      }
+    }
+  }
+  .logo {cursor: pointer;}
+  .header-mid {
+    padding:20px 0;
+    background: $white-color;
+    border-bottom:4px solid $primary-color;
+    clear: both;
+    @media (max-width:767px) {
+      padding: 10px 0;
+      border-bottom:3px solid $primary-color;
+    } 
+  }
+} 
+.my-account{
+   display: $d-none;
+   padding:0 6px;
+}
+.navbar-toggler {
+  width: 50px;
+  @media (min-width:1024px){
+     display:$d-none;
+  }
+}
+.header_blue {
+  .sidebar_header {
+    button {
+      img{        
+        filter: brightness(0) invert(1);        
+        width: 26px;
+      }
+    }
+  }
+}
+a.browse_all {
+  color: $black-color;
+  font-size: $f16+2;
+  font-weight: 600;
+  @media (max-width:767px){
+    font-size: $f14;
+  }
+}
+.mob_logos {
+  @media (max-width:575px) {
+    padding-right: 0!important;
+  }
+}
+.profile_icon {
+  svg {
+    path {
+      color:$white-color;
+    }
+  }
+}
+.sticky {
+  position: $fixed;
+  top: 0;
+  width: 100%;
+}

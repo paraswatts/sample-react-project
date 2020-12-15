@@ -1,0 +1,211 @@
+@import '../../../../../../theme/common/base.scss';
+.rdrDefinedRangesWrapper{
+    display: $d-none;
+}
+.rdrDateDisplayWrapper{
+    display: $d-none;
+}
+.rdrDayDisabled{
+    background-color: #303658;
+    color: #6c757d;
+}
+
+.travel_calender  {    
+    @media (max-width:991px){
+        margin:0 0 20px;
+    }
+    .rdrDateRangePickerWrapper{
+         width: 100%;
+        .rdrCalendarWrapper {
+            background-color: #303658;
+            width: 100%;
+            .rdrMonthAndYearWrapper {
+                .rdrMonthAndYearPickers {
+                    .rdrMonthPicker, .rdrYearPicker {
+                        position: $relative;
+                        &:after {
+                            content:'';
+                            width: 0;  height: 0; 
+                            border-left: 5px solid transparent;
+                            border-right: 5px solid transparent;  
+                            border-top: 5px solid $white-color;
+                            position:$absolute;
+                            top:18px;
+                            right:7px;
+                            pointer-events: none;
+                        }
+                    }
+                    select {
+                        color:$white-color;     
+                        background-image: none;                   
+                    }
+                }
+            }
+            .rdrMonth {
+                width: 100%;
+            }            
+            .rdrWeekDay {
+                color:$white-color;
+            }
+            .rdrDayPassive {
+                .rdrDayNumber {
+                    span {
+                        color:rgba(255,255,255,.5);
+                    }
+                }    
+            }
+            .rdrDayNumber {
+                span {
+                    color:$white-color;
+                }
+            }  
+        }
+    }
+}
+.Badge_calendar {
+    li {
+        margin-bottom: 10px;
+        .badge {
+            min-width: 60px;
+            border-radius: 15px;
+            min-height: 16px;
+            display: $inline-block;
+            margin-right:12px;
+            &.badge-available {
+                background: #1DD1A1;
+            }
+            &.badge-free {
+                background: #FF6B6B;
+            }
+            &.badge-paid {
+                background: $gold-color;
+            }
+        }
+    }
+}
+
+.cost_summary {
+    background: $grey-color3;
+    font-size: $f16;    
+    padding:25px;
+    @media (max-width:767px){
+        padding:15px;
+    }
+    .row {
+        padding:7px;
+        span {
+            color:$primary-color;
+        }
+    }
+}
+.enlarge_icon {
+    position: $absolute;
+    top:20px;
+    right:20px;
+    background: $white-color;
+    padding:10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    cursor: pointer;
+    border-radius: 30px;
+    display: $d-flex;
+    align-items: center;
+    height: 40px;
+    width:40px;
+    img{
+        width: 30px
+    }
+}
+// Accordion
+.accordion_sec {
+    .Collapsible {
+        margin-bottom: 10px;
+    }
+    .Collapsible__contentInner {
+        padding:20px;
+    }    
+    .Collapsible__trigger {
+        background:$grey-color3;
+        position: $relative;
+        padding:12px 20px;
+        display: $block;
+        border-radius: 5px;
+        font-size: $f16;
+        color:$base-color;
+        font-weight:600;
+        cursor: pointer;
+        &:after {
+            content: '';
+            background-size: 100%;
+            background-repeat: no-repeat;
+            position: $absolute;
+            right:10px;
+            top:10px;
+            width:30px;
+            height:30px
+        }
+        &.is-closed {
+            &:after {
+                background-image:url(../../../../../../assets/icons/plus_icon.svg);
+            }
+        }
+        &.is-open{
+            &:after {
+                background-image:url(../../../../../../assets/icons/minus_icon.svg);
+            }
+        }
+    }       
+}
+.Collapsible__contentInner, .faq_main{
+    counter-reset: section;
+    hr {
+        border-color:$grey-color8;
+    }
+}
+.faq_list {
+    position: relative;      
+    padding-left:30px;    
+    margin:10px 0 0;              
+    border-bottom:1px dashed $grey-color7;
+    margin-top:25px;  
+    h6 {
+        font-weight: 600;
+    }
+    &::before {
+        counter-increment: section;
+        content:counter(section) "." ;
+        position:$absolute;
+        left:0;
+        top:-3px;
+        font-weight:700;
+        font-size:$f16;
+        color:$base-color;
+    }    
+}
+
+.veh_detail {
+    border: 1px solid #eee;        
+    .col-md-6 {
+        &:first-child {
+            @media (min-width:767px){
+                border-right:1px solid $grey-color7;
+            }
+        }
+    }
+    .row {
+        &:nth-child(odd) {
+            background: $grey-color4;
+        }
+    }
+    .col {
+        padding:15px;
+        border-bottom: 1px solid $grey-color3;
+        color:$base-color;
+        font-size: $f14 + 1;
+        @media (max-width:1200px){
+            font-size: $f14;
+        }
+        &.text-left {
+            font-weight:600;
+        }
+    }
+}

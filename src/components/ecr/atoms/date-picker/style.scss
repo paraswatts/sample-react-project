@@ -1,0 +1,124 @@
+@import '../../../../theme/common/base.scss';
+
+button.Mui-disabled {
+    opacity: .3;
+}
+.MuiInputBase-input{
+    font-size:$f14;    
+}
+.MuiInputBase-root {
+    border:1px solid $grey-color;
+    min-height: 48px;
+    padding:0;    
+    font-size:$f14;
+    border-radius: 35px;
+} 
+.form-group {
+    .MuiInputBase-input{ 
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color: $white-color; 
+        color:$base-color;
+        min-height:32px;
+        border-radius: 35px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        &:disabled {
+            background:transparent;
+        }
+        @media(max-width: 768px){
+            // font-size: 0.8rem;
+            min-height:32px;
+        }
+    }
+    div{
+     
+    @media (max-width: 768px) {    
+            // z-index: -1;
+            // position: relative;
+        }
+    }
+    
+}
+.MuiInput-underline {
+    &:before, &:after {
+        border:0!important
+    }
+}
+.MuiFormControl-marginNormal {
+    margin:0!important;
+}
+
+.MuiInputBase-input::-webkit-input-placeholder { 
+  color: $base-color!important;
+  font-family: $default-font;
+  opacity: 1!important;
+}
+.MuiInputBase-input::input-placeholder {
+  color: $base-color!important;
+  font-family: $default-font;
+  opacity: 1!important;
+}
+.MuiInputBase-input::-moz-placeholder{
+   color: $base-color;
+   opacity:1!important;
+}
+button.MuiPickersDay-day {
+    padding:0!important;
+}
+.MuiPickersDay-dayDisabled{
+    .MuiIconButton-label{
+        color:lightgrey;
+    }
+}
+.MuiPickersToolbar-toolbar{
+    background-color: $primary-color!important;
+}
+.MuiPickersDay-daySelected{
+    background-color: $primary-color!important;
+    .MuiIconButton-label{
+        color: $white-color;     
+    }
+}
+.MuiPickersCalendar-transitionContainer {
+    .MuiIconButton-root {
+        &:hover, &:focus {
+            background:$primary-color!important;
+            color: $white-color!important;
+            span {
+                color:inherit;
+            }
+        }
+    }
+}
+.MuiDialogActions-spacing {
+    .MuiButton-textPrimary {
+        border:1px solid $primary-color;
+        background: transparent;
+        color:$primary-color;
+        .MuiButton-label {
+            color:$primary-color !important;
+        }
+        &:hover {
+             background-color: $primary-color!important;
+            .MuiButton-label {               
+                color:$white-color !important;
+            }
+        }
+    }
+}
+.form-box {
+    button.MuiButtonBase-root.MuiIconButton-root {
+        padding: 0;
+    }
+}
+.MuiPickersToolbarText-toolbarTxt {
+    color:$white-color!important;
+}
+.MuiButton-label .MuiPickersToolbarText-toolbarBtnSelected {
+    font-weight:700;
+}
+/**IE edge pwd eye icon disable**/
+input[type=password]::-ms-reveal, input[type=password]::-ms-clear {
+    display: none;
+}

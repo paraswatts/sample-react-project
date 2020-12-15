@@ -1,0 +1,125 @@
+@import '../../../../../../theme/common/base.scss';
+
+.for_vehicle{
+    position: relative;
+}
+.badges_vehicles {
+    .badge-grey { 
+        background: #E5F4FE;
+        border:1px solid $grey-color1;
+        border-radius: 30px;
+        vertical-align: middle;
+        font-size: $f16;
+        padding:10px 20px;
+        margin:5px 10px 0 0;
+        i {
+            border:1px solid $grey-color1;
+            border-radius: 30px;        
+            width:20px;
+            height: 20px;
+            line-height: 14px;
+            text-align: center;
+            background: $white-color;
+            display: $inline-block;
+            cursor: pointer;
+            img {
+                width:10px;
+            }
+        }
+    }
+}
+
+// Branch
+.table-style1 {
+    td {
+        font-size: $f14;
+    }
+}
+.action_btn {
+    a {
+        margin:5px 10px;
+        display: $inline-block;
+    }
+}
+.edit_btn {
+    color:$primary-color;
+}
+.del_btn {
+     color: $red-color;
+}
+.add-vehicle-button{
+    width: 27px;
+    height: 27px;
+    background: #fff;
+    padding: 0;
+    border: 1px solid #4D4D4F;
+    font-weight: 300;
+    color: #4D4D4F;
+    font-size: 14px;
+    font-family: fantasy !important;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+      &:hover {
+          background: #fff;
+          color:#4D4D4F;   
+          .Tooltip_block {
+          opacity: 1;
+        }
+      }  
+  }
+  .Tooltip_block {
+    position: absolute;
+      background: white;
+      padding: 5px;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 210px;
+      right: 40px;
+      top: -10px;
+      border: 1px solid #535050;
+      font-size: 13px;
+      text-align: center;
+      z-index: 1;
+      display: none;
+  }
+  #tooltip_title_show{
+    float: left;
+    display: block;
+  }
+  .tooltip_show .Tooltip_block {
+    display: block;
+  }
+  .compact_cars{
+    .shadow_car{
+      box-shadow: 2px 2px 2px 0px #bcbcbc;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+  }
+  .custom_drop{
+    position: relative;
+    &:before{
+      border-style: solid;
+      content: ' ';
+      display: block;
+      height: 0;
+      position: absolute;
+      width: 0;
+      border-width: 19px 9px !important;
+      border-color: #535050 transparent transparent !important;
+      top: 15px;
+      right: 15px;
+      background: transparent !important;
+      z-index: 11;
+      @media (max-width:575px) {
+        border-width: 12px 6px !important;
+      }
+    }
+  }
+.custom_drop{
+  .MuiFormLabel-root{
+    padding-right: 25px;
+    width: auto !important;
+  }
+}

@@ -1,0 +1,24 @@
+.insurance_table{
+    table{
+        width: 75%;
+        tbody{
+            box-shadow: none;
+            td{
+                padding: .3rem .75rem;
+            }
+            .edit_screen{
+                cursor: pointer;
+                text-decoration: underline;
+               font-weight: 500;
+                color: #159aff;              
+            }
+            .delete_screen{
+                cursor: pointer;
+                text-decoration: underline;
+                font-weight: 500;
+                color: #ff1414;
+            }
+        }
+        
+    }
+}

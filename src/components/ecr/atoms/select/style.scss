@@ -1,0 +1,21 @@
+@import '../../../../theme/common/base.scss';
+
+.css-yk16xz-control, .css-1pahdxg-control {
+  border-radius:40px!important;
+  min-height: 48px!important;
+  border-color:$grey-color!important;      
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.css-1pahdxg-control {
+  box-shadow:0 0 0 .5px $primary-dark!important;  
+}
+.css-1wa3eu0-placeholder { 
+  color: $base-color!important;
+  @media(max-width: 1200px){
+    font-size: 0.8rem;
+  }
+}
+.css-26l3qy-menu, .select__menu {
+  z-index: 11;
+}
